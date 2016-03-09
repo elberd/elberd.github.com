@@ -27,4 +27,11 @@ $(document).ready(function(){
 		$('.menu ul').css('visibility','visible')
 	})
 
+	$('.arrow-left').on('click', function(){ 
+	})
+
+	$('.arrow-right').on('click', function(){
+		
+	})
+
 })

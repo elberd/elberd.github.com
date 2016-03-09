@@ -138,3 +138,32 @@ header .phone {
 .menu {
 	background: #262626;
 }
+
+.slider {
+	position: relative;
+}
+
+.slider .arrows {
+	height: 40px;
+    width: 1200px;
+    left: 50%;
+    top: 50%;
+    margin-left: -600px;
+    position: absolute;
+}
+
+.arrows .fotorama_custom__arr--prev {
+	background: url('../img/sprite.png') no-repeat -41px -10px;
+	width: 17px;
+	height: 29px;
+	float: left;
+	cursor: pointer;
+}
+
+.arrows .fotorama_custom__arr--next {
+	background: url('../img/sprite.png') no-repeat -68px -10px;
+	width: 17px;
+	height: 29px;
+	float: right;
+	cursor: pointer;
+}
