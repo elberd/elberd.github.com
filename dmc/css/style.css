@@ -8,10 +8,27 @@ h1, h2, h3, h4 {
 	font-family: 'FuturaPTCond-Bold';
 }
 
+h2 {
+	font-size: 3.125rem;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+h4 {
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
 header {
 	background: #262626;
-	padding: 40px 0 20px 0;
-	overflow: hidden;
+    padding: 40px 0 20px 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
 }
 
 header .logo {
@@ -40,7 +57,7 @@ header .header-nav {
 	border: 1px solid #3c3c3c;
 	margin-left: 20px;
 	font-size: 0.813rem;
-	letter-spacing: 1px;
+	letter-spacing: 2px;
 }
 
 header .header-nav:hover {
@@ -49,7 +66,7 @@ header .header-nav:hover {
 
 header .phone {
 	padding: 13px 20px 0 0;
-	letter-spacing: 1px;
+	letter-spacing: 2px;
 	font-weight: bold;
 }
 
@@ -137,6 +154,10 @@ header .phone {
 
 .menu {
 	background: #262626;
+    position: absolute;
+    top: 104px;
+    z-index: 999;
+    width: 100%;
 }
 
 .slider {
@@ -166,4 +187,153 @@ header .phone {
 	height: 29px;
 	float: right;
 	cursor: pointer;
+}
+
+.slider-item {
+	position: absolute;
+	bottom: 60px;
+	width: 100%;
+}
+
+.slider-item h2 {
+	color: #fff;
+	width: 550px;
+	margin-bottom: 55px;
+}
+
+.readmore {
+	padding: 20px 100px 20px 40px;
+	display: inline-block;
+	text-decoration: none;
+	letter-spacing: 2px;
+	border: 1px solid #fff;
+	color: #fff;
+	font-size: 0.813rem;
+	text-transform: uppercase;
+	position: relative;
+}
+
+.readmore:before {
+	content: '';
+	position: absolute;
+	right: 27px;
+	top: 22px;
+	background: url('../img/sprite.png') no-repeat -114px -18px;
+	width: 7px;
+	height: 12px; 
+}
+
+.readmore:after {
+	content: '';
+	width: 60px;
+	height: 100%;
+	position: absolute;
+	right: 0;
+	top: 0;
+	border-left: 1px solid #fff;
+}
+
+.select-wrapper {
+	position: relative;
+	display: inline-block; 
+}
+
+button {
+	padding: 20px 40px;
+	font-size: 0.813rem;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	border: 1px solid #3c3c3c;
+	background: #262626;
+	outline: none;
+	color: #fff;
+}
+
+.drop-list {
+	padding: 19px 100px 19px 40px;
+	font-size: 0.813rem;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	background: #262626;
+	cursor: pointer;
+	color: #fff;
+	position: relative;
+	outline: none;
+	border: 1px solid #3c3c3c;
+		-webkit-appearance: none;
+	    -moz-appearance: none;
+	appearance: none;
+}
+
+.select-wrapper:after {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 60px;
+	top: 1px;
+	bottom: 1px;
+	right: 0;
+	pointer-events: none;
+	border-left: 1px solid #3c3c3c;
+	z-index: 30;
+}
+
+.select-wrapper:before {
+	content: '';
+	display: block;
+	pointer-events: none;
+	position: absolute;
+	right: 24px;
+    top: 26px;
+	z-index: 40;
+	background: url('../img/sprite.png') no-repeat -138px -21px;
+	width: 12px;
+	height: 7px;
+}
+
+.drop-list:focus {
+	border: 1px solid #fff;
+}
+
+.filter {
+	background: #262626;
+	overflow: hidden;
+	padding: 40px 0;
+}
+
+.filter h4 {
+	color: #7d7d7d;
+	margin: 0;
+	width: 180px;
+	display: block;
+    float: left;
+}
+
+#filter-form {
+	display: inline-block;
+	overflow: hidden;
+}
+
+.filter .online-sale {
+	display: inline-block;
+	text-transform: uppercase;
+	color: #fff;
+	padding: 20px;
+	text-decoration: none;
+	position: relative;
+	float: right;
+}
+
+.filter .online-sale:after {
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 22px;
+	background: url('../img/sprite.png') no-repeat -114px -18px;
+	width: 7px;
+	height: 12px;
+}
+
+.filter .select-wrapper, .filter button {
+	margin-left: 16px;
 }

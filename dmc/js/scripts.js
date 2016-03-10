@@ -27,11 +27,15 @@ $(document).ready(function(){
 		$('.menu ul').css('visibility','visible')
 	})
 
-	$('.arrow-left').on('click', function(){ 
-	})
+})
 
-	$('.arrow-right').on('click', function(){
-		
+$('.fotorama').on('fotorama:ready', function (e, fotorama, extra) { 
+
+	$('.fotorama_custom__arr--prev').on('click', function(e){ 
+			fotorama.show('>')
+	})
+		$('.fotorama_custom__arr--next').on('click', function(e){
+			fotorama.show('<')
 	})
 
 })
