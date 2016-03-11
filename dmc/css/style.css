@@ -2,6 +2,7 @@ body {
 	font-family: 'ProximaNova-Regular';
 	font-size: 0.875rem;
 	font-weight: normal;
+	color: #262626;
 }
 
 h1, h2, h3, h4 {
@@ -12,6 +13,12 @@ h2 {
 	font-size: 3.125rem;
 	text-transform: uppercase;
 	letter-spacing: 2px;
+}
+
+h3 {
+	font-size: 1.875rem;
+	text-transform: uppercase;
+	letter-spacing: 1px;
 }
 
 h4 {
@@ -336,4 +343,46 @@ button {
 
 .filter .select-wrapper, .filter button {
 	margin-left: 16px;
+}
+
+.section-title {
+ 	display: block;
+ 	position: relative;
+ 	margin-top: 130px;
+ 	margin-bottom: 75px;
+}
+
+.section-title .line {
+ 	display: block;
+ 	position: absolute;
+ 	z-index: 1;
+ 	width: 100%;
+ 	top: 50%;
+ 	height: 2px;
+ 	background: #262626;
+}
+
+.section-title h2 {
+ 	display: inline-block;
+ 	background: #fff;
+ 	position: relative;
+ 	margin: 0;
+ 	z-index: 100;
+ 	padding-right: 23px;
+}
+
+.offers>div {
+ 	width: 33.3%;
+ 	float: left;
+ 	position: relative;
+}
+
+.offers>div h3, .offers>div p, .offers>div span {
+	position: absolute;
+}
+
+.offers>div h3 {
+	margin: 40px;
+	top: 0;
+	color: #fff;
 }
