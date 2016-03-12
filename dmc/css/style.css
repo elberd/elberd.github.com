@@ -41,8 +41,8 @@ header {
 header .logo {
 	display: block;
 	float: left;
-	width: 171px;
-	height: 42px;
+	width: 163px;
+	height: 40px;
 	background: url('../img/logo.png') no-repeat;
 }
 
@@ -103,6 +103,41 @@ header .phone {
 
 .menu {
 	position: relative;
+}
+
+.menu.menu-fixed {
+	position: fixed;
+	top: 0;
+	padding-top: 10px;
+}
+
+.menu.menu-fixed ul {
+	margin-left: 180px;
+}
+
+.menu.menu-fixed ul:before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 5px;
+	left: 0;
+	width: 122px;
+    height: 30px;
+    background-size: contain;
+    background-image: url('../img/logo.png');
+    background-repeat: no-repeat;
+}
+
+.menu.menu-fixed ul li {
+	margin-left: 25px;
+}
+
+.menu.menu-fixed #search-form {
+	height: 40px;
+}
+
+.menu.menu-fixed .search {
+	bottom: 4px;
 }
 
 .menu .search {

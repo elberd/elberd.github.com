@@ -27,6 +27,15 @@ $(document).ready(function(){
 		$('.menu ul').css('visibility','visible')
 	})
 
+	$(window).on('scroll', function(){
+	    if ($(window).scrollTop() > 95)
+		    {
+		    	$('.menu').addClass('menu-fixed');
+		    }else{
+		    	$('.menu').removeClass('menu-fixed');
+		    }
+	}).scroll()
+
 })
 
 $('.fotorama').on('fotorama:ready', function (e, fotorama, extra) { 
