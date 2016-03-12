@@ -371,18 +371,64 @@ button {
  	padding-right: 23px;
 }
 
-.offers>div {
+.cards {
+	overflow: hidden;
+}
+
+.cards .cards-small {
  	width: 33.3%;
  	float: left;
  	position: relative;
 }
 
-.offers>div h3, .offers>div p, .offers>div span {
+.cards .cards-big {
+	width: 66.6%;
+	float: left;
+ 	position: relative;
+}
+
+.cards>div img {
+	display: block;
+}
+
+.cards>div h3, .cards>div p, .cards>div span, .cards .readmore {
 	position: absolute;
 }
 
-.offers>div h3 {
+.cards .readmore {
+	bottom: 0;
+	margin: 0 40px 40px;
+}
+
+.cards>div h3 {
 	margin: 40px;
 	top: 0;
 	color: #fff;
+}
+
+.cards>div p {
+	margin: 40px 40px 120px;
+	bottom: 0;
+	color: #fff;
+	line-height: 2;
+}
+
+.cards>div span {
+	margin: 0 40px 40px 40px;
+	color: #fff;
+	padding-right: 20px;
+	text-transform: uppercase;
+	text-decoration: none;
+	bottom: 0;
+}
+
+.cards>div span:after {
+	content: '';
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 3px;
+	background: url('../img/sprite.png') no-repeat -170px -19px;
+	width: 7px;
+	height: 10px;
 }
