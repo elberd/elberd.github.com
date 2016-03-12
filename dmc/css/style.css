@@ -1,6 +1,7 @@
 body {
 	font-family: 'ProximaNova-Regular';
 	font-size: 0.875rem;
+	letter-spacing: 0.5px;
 	font-weight: normal;
 	color: #262626;
 }
@@ -23,7 +24,6 @@ h3 {
 
 h4 {
 	font-size: 1.5rem;
-	text-transform: uppercase;
 	letter-spacing: 1px;
 }
 
@@ -310,7 +310,8 @@ button {
 
 .filter h4 {
 	color: #7d7d7d;
-	margin: 0;
+	margin: 0; 
+	text-transform: uppercase;
 	width: 180px;
 	display: block;
     float: left;
@@ -373,6 +374,7 @@ button {
 
 .cards {
 	overflow: hidden;
+	background: #000;
 }
 
 .cards .cards-small {
@@ -389,9 +391,27 @@ button {
 
 .cards>div img {
 	display: block;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+	filter: alpha(opacity=60);
+	-moz-opacity: 0.6;
+	-khtml-opacity: 0.6;
+	opacity: 0.6;
 }
 
-.cards>div h3, .cards>div p, .cards>div span, .cards .readmore {
+.cards .cards-big:hover img, .cards .cards-small:hover img {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	-moz-opacity: 1;
+	-khtml-opacity: 1;
+	opacity: 1;
+	-webkit-transition: opacity .15s ease-in-out;
+        -moz-transition: opacity .15s ease-in-out;
+        -ms-transition: opacity .15s ease-in-out;
+        -o-transition: opacity .15s ease-in-out;
+        transition: opacity .15s ease-in-out;
+}
+
+.cards>div h3, .cards>div p, .cards .look, .cards .readmore {
 	position: absolute;
 }
 
@@ -413,16 +433,19 @@ button {
 	line-height: 2;
 }
 
-.cards>div span {
+.cards .look {
 	margin: 0 40px 40px 40px;
+	bottom: 0;
+}
+
+.look {
 	color: #fff;
 	padding-right: 20px;
 	text-transform: uppercase;
 	text-decoration: none;
-	bottom: 0;
 }
 
-.cards>div span:after {
+.look:after {
 	content: '';
 	display: block;
 	position: absolute;
@@ -432,3 +455,148 @@ button {
 	width: 7px;
 	height: 10px;
 }
+
+.cards .location {
+	margin: 0 40px 120px 40px;
+	bottom: 0;
+	position: absolute;
+}
+
+.location {
+	color: #fff;
+	padding-left: 20px;
+	font-size: 0.75rem;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.location:after {
+	content: '';
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: url('../img/sprite.png') no-repeat -197px -17px;
+	width: 9px;
+	height: 15px;
+}
+
+.cards .spotlight-preview {
+	margin-bottom: 150px;
+}
+
+.partners {
+	margin: 145px 0 100px 0;
+	overflow: hidden;
+}
+
+.partners img {
+	display: block;
+	float: left;
+	width: 16%;
+	margin-right: 5%;
+}
+
+.partners img:last-child {
+	margin-right: 0;
+}
+
+.footer-menu1 {
+	background: #f3f3f3;
+	overflow: hidden;
+	padding: 60px 0 40px 0;
+}
+
+.footer-menu1 h4 {
+	font-family: 'ProximaNova-Regular';
+	font-weight: normal;
+	margin: 0 0 30px 0;
+}
+
+.footer-menu1 ul {
+	display: block;
+	float: left;
+	width: 19%;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	margin-right: 8%;
+}
+
+.footer-menu1 ul li {
+	margin-bottom: 10px;
+}
+
+.footer-menu1 ul li a {
+	text-decoration: none;
+	color: #262626;
+}
+
+.footer-menu1 ul li a:hover {
+	text-decoration: underline;
+}
+
+.footer-menu1 ul:last-child {
+	margin-right: 0;
+}
+
+.footer-menu2 {
+	background: #262626;
+	padding: 40px 0 60px 0;
+	text-align: center;
+	color: #6b6b6b;
+	text-transform: uppercase;
+}
+
+.footer-menu2 .footer-links {
+	margin-left: 20px;
+	color: #6b6b6b;
+	text-decoration: none;
+}
+
+.footer-menu2 .footer-links:hover {
+	color: #fff;
+}
+
+.footer-menu2 .copyright {
+	margin-right: 20px;
+}
+
+.footer-menu2 .social {
+	margin-top: 40px;
+}
+
+.footer-menu2 .social a {
+	display: inline-block;
+	margin-left: 40px;
+}
+
+.footer-menu2 .social a:first-child {
+	margin-left: 0;
+}
+
+
+.footer-menu2 .social .vk {
+	background: url('../img/sprite.png') no-repeat -20px -63px;
+	width: 38px;
+	height: 22px;
+}
+
+.footer-menu2 .social .fb {
+	background: url('../img/sprite.png') no-repeat -128px -57px;
+	width: 17px;
+	height: 33px;
+}
+
+.footer-menu2 .social .tw {
+	background: url('../img/sprite.png') no-repeat -79px -61px;
+	width: 30px;
+	height: 25px;
+}
+
+.footer-menu2 .social .ok {
+	background: url('../img/sprite.png') no-repeat -165px -61px;
+	width: 17px;
+	height: 29px;
+}
+
