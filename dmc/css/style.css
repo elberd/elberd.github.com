@@ -11,7 +11,7 @@ h1, h2, h3, h4 {
 }
 
 h2 {
-	font-size: 3.125rem;
+	font-size: 3rem;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 }
@@ -200,6 +200,33 @@ header .phone {
     top: 104px;
     z-index: 999;
     width: 100%;
+}
+
+.content {
+	margin-top: 154px;
+	line-height: 1.5;
+	overflow: hidden;
+	padding-bottom: 100px;
+}
+
+.content-home {
+	overflow: hidden;
+	padding-bottom: 100px;
+}
+
+.title-banner {
+	height: 320px;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+}
+
+.title-banner h2 {
+	line-height: 320px;
+	color: #fff;
+	margin: 0;
+	font-size: 3.75rem;
 }
 
 .slider {
@@ -464,6 +491,8 @@ button {
 .cards>div p {
 	margin: 40px 40px 120px;
 	bottom: 0;
+	padding: 0;
+	font-size: 0.875rem;
 	color: #fff;
 	line-height: 2;
 }
@@ -521,7 +550,7 @@ button {
 }
 
 .partners {
-	margin: 145px 0 100px 0;
+	margin: 145px 0 0 0;
 	overflow: hidden;
 }
 
@@ -534,6 +563,105 @@ button {
 
 .partners img:last-child {
 	margin-right: 0;
+}
+
+.single-page .lid {
+	font-size: 1.25rem;
+	text-align: center;
+	margin-top: 100px;
+	padding: 0 100px;
+}
+
+.text-header {
+	text-align: center;
+	overflow: hidden;
+}
+
+.text-header h2 {
+	margin: 120px 0 40px 0;
+	padding: 0 40px 20px;
+	display: inline-block;
+	border-bottom: 2px solid #262626;
+}
+
+.single-page p {
+	padding: 0 185px;
+	font-size: 1rem;
+	margin: 0 0 20px 0;
+}
+
+.single-page .quote {
+	background-image: url('../img/quote.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 110px 0 0 0;
+	padding-left: 390px;
+	padding-right: 40px;
+	padding-bottom: 35px;
+	color: #fff;
+	overflow: hidden;
+}
+
+.single-page .quote p {
+	padding: 0;
+}
+
+.single-page .quote h2 {
+	margin: 35px 0 20px 0;
+}
+
+.single-page .quote .readmore {
+	float: right;
+}
+
+.statistic {
+	background: url(../img/statistic.png) no-repeat;
+	width: 997px;
+	height: 332px;
+	margin: 40px auto 0 auto;
+}
+
+.statistic>div {
+	width: 50%;
+	height: 50%;
+	float: left;
+}
+
+.readmore.black {
+	color: #262626;
+	border-color: #262626;
+}
+
+.readmore.black:after {
+	border-color: #262626;
+}
+
+.readmore.black:before {
+	background: url('../img/sprite.png') no-repeat -226px -17px;
+}
+
+.readmore-center {
+	width: 100%;
+	text-align: center;
+	overflow: hidden;
+	margin-top: 50px;
+}
+
+.statistic h3 {
+	font-family: 'ProximaNova-Regular';
+    margin-bottom: 15px;
+}
+
+.statistic .stat2, .statistic .stat4 {
+	text-align: right;
+}
+
+.statistic .stat1 h3, .statistic .stat2 h3 {
+	margin-top: 20px;
+}
+
+.statistic .stat3 h3, .statistic .stat4 h3 {
+	margin-top: 53px;
 }
 
 .footer-menu1 {

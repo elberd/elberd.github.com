@@ -38,13 +38,14 @@ $(document).ready(function(){
 
 })
 
-$('.fotorama').on('fotorama:ready', function (e, fotorama, extra) { 
+// $('.fotorama').on('fotorama:ready', function (e, fotorama, extra) { 
 
-	$('.fotorama_custom__arr--prev').on('click', function(e){ 
-			fotorama.show('>')
-	})
-		$('.fotorama_custom__arr--next').on('click', function(e){
-			fotorama.show('<')
-	})
+// 	$('.fotorama_custom__arr--prev').on('click', function(){ 
+// 		fotorama.show('<')
+// 	})
 
-})
+// 	$('.fotorama_custom__arr--next').on('click', function(){
+// 		fotorama.show('>')
+// 	})
+
+// })
