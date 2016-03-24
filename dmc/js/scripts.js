@@ -36,6 +36,22 @@ $(document).ready(function(){
 		    }
 	}).scroll()
 
+	
+
+	$('.manager a').on('click', function(e){
+		var $manager = $(this).closest('.manager');
+
+		var photo = $manager.data('image')
+		var name =  $manager.data('name')
+		var job =  $manager.data('job')
+		var text =  $manager.data('text')
+
+		$('.popup').css('visibility','visible')
+		$('.popup-manager img').attr('src', photo)
+		e.preventDefault()
+		console.log(photo)
+	})
+
 })
 
 // $('.fotorama').on('fotorama:ready', function (e, fotorama, extra) { 
