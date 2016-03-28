@@ -21,12 +21,6 @@ $(document).ready(function(){
 		e.stopPropagation?e.stopPropagation():e.cancelBubble = true
 	})
 
-	$('body').on('click', function(){
-		$('#search-form').css('display','none')
-		$('.search').removeClass('act-search')
-		$('.menu ul').css('visibility','visible')
-	})
-
 	$(window).on('scroll', function(){
 	    if ($(window).scrollTop() > 95)
 		    {
@@ -42,14 +36,30 @@ $(document).ready(function(){
 		var $manager = $(this).closest('.manager');
 
 		var photo = $manager.data('image')
-		var name =  $manager.data('name')
-		var job =  $manager.data('job')
 		var text =  $manager.data('text')
 
 		$('.popup').css('visibility','visible')
-		$('.popup-manager img').attr('src', photo)
+		$('.popup-manager>img').attr('src', photo)
+		$('.popup-manager>div').text(text)
 		e.preventDefault()
-		console.log(photo)
+
+		e.stopPropagation?e.stopPropagation():e.cancelBubble = true
+	})
+
+	$('.popup-manager').on('click', function(e){
+		e.stopPropagation?e.stopPropagation():e.cancelBubble = true
+	})
+
+	$('.popup-manager .close').on('click', function(e){
+		$('.popup').css('visibility','hidden')
+		e.preventDefault()
+	}) 
+
+	$('body').on('click', function(){
+		$('#search-form').css('display','none')
+		$('.search').removeClass('act-search')
+		$('.menu ul').css('visibility','visible')
+		$('.popup').css('visibility','hidden')
 	})
 
 })

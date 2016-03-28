@@ -795,11 +795,6 @@ button {
     left: 0;
     right: 0;
     background: rgba(0,0,0,0.8);
-    	-webkit-transition: all .2s ease-in-out;
-        -moz-transition: all .2s ease-in-out;
-        -ms-transition: all .2s ease-in-out;
-        -o-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
 }
 
 .manager:hover .read-popup {
@@ -814,11 +809,28 @@ button {
 	margin-left: -450px;
 	background: #fff;
 	width: 900px;
-	height: 426px;
+	height: 395px
+}
+
+.popup-manager .close {
+	content: '';
+	display: block;
+	position: absolute;
+	right: -25px;
+    top: -20px;
+	background: url('../img/sprite.png') no-repeat -279px -16px;
+	width: 19px;
+	height: 14px;
 }
 
 .popup-manager img {
-	width: 395px; 
+	height: 395px;
+	margin-right: 40px;
+	float: left;
+}
+
+.popup-manager div {
+	padding: 40px;
 }
 
 .manager:hover img {
