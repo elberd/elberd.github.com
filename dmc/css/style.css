@@ -282,6 +282,14 @@ header .phone {
 	position: relative;
 }
 
+.right-col .readmore {
+	padding: 20px 80px 20px 20px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 30px 0 100px 0;
+}
+
 .readmore:before {
 	content: '';
 	position: absolute;
@@ -415,7 +423,7 @@ button {
  	margin-bottom: 75px;
 }
 
-.section-title .line {
+.section-title .line, .show-all .line{
  	display: block;
  	position: absolute;
  	z-index: 1;
@@ -507,6 +515,7 @@ button {
 	padding-right: 20px;
 	text-transform: uppercase;
 	text-decoration: none;
+	position: relative;
 }
 
 .look:after {
@@ -516,6 +525,16 @@ button {
 	right: 0;
 	top: 3px;
 	background: url('../img/sprite.png') no-repeat -170px -19px;
+	width: 7px;
+	height: 10px;
+}
+
+.look.black {
+	color: #262626;
+}
+
+.look.black:after {
+	background: url('../img/sprite.png') no-repeat -315px -18px;
 	width: 7px;
 	height: 10px;
 }
@@ -572,6 +591,11 @@ button {
 	padding: 0 100px;
 }
 
+.left-col .lid {
+	text-align: left;
+	padding: 0;
+}
+
 .text-header {
 	text-align: center;
 	overflow: hidden;
@@ -621,6 +645,19 @@ button {
 	float: right;
 }
 
+.right-col .fotorama__caption {
+	bottom: 50%;
+	margin-bottom: -15px;
+	text-align: center;
+}
+
+.right-col .fotorama__caption .fotorama__caption__wrap {
+	text-transform: uppercase;
+	font-weight: bold;
+	background-color: transparent;
+	color: #fff;
+}
+
 .left-col {
 	padding: 135px 385px 0 0;
 }
@@ -633,6 +670,14 @@ button {
 	margin-top: 0;
 }
 
+.left-col .text-header {
+	text-align: left;
+}
+
+.left-col .text-header h2 {
+	padding: 0 0 30px 0;
+}
+
 .right-col .text-header h2 {
 	text-align: left;
 	padding: 0 0 30px 0;
@@ -643,7 +688,7 @@ button {
 .right-col-menu {
 	list-style: none;
 	padding: 0;
-	margin: 0 0 80px 0;
+	margin: 0 0 100px 0;
 	font-size: 1.125rem;
 	font-weight: bold;
 }
@@ -767,6 +812,101 @@ button {
 	background: #000;
 	height: 360px;
 	position: relative;
+}
+
+.list-item {
+	overflow: hidden;
+	margin-bottom: 80px;
+}
+
+.list-item .title-item {
+	font-size: 1.875rem;
+	font-family: 'FuturaPTCond-Bold';
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #262626;
+	letter-spacing: 1px;
+	line-height: 1.2;
+	margin-bottom: 10px;
+	display: block;
+}
+
+.list-item img {
+	float: left;
+}
+
+.show-all {
+	display: block;
+	position: relative;
+	text-align: right;
+	overflow: hidden;
+}
+
+.show-all a {
+	float: right;
+	background: #262626;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 0.813rem;
+	text-decoration: none;
+	line-height: 50px;
+	height: 50px;
+	padding: 0 50px 0 40px;
+    position: relative;
+    margin: 0;
+    z-index: 100;
+}
+
+.show-all .white-square{
+	float: right;
+	height: 50px;
+	width: 30px;
+	position: relative;
+	z-index: 100;
+	background: #fff;
+}
+
+.show-all a:after {
+	content: '';
+	display: block;
+	position: absolute;
+	right: 28px;
+    top: 18px;
+	background: url('../img/sprite.png') no-repeat -114px -18px;
+	width: 7px;
+	height: 12px;
+}
+
+.list-item .item-wrapper {
+	padding-left: 345px;
+}
+
+.list-item .item-wrapper p{
+	font-size: 0.875rem;
+}
+
+.date {
+	color: #9f9f9f;
+	text-transform: uppercase;
+	font-size: 0.75rem;
+	padding-left: 20px;
+	position: relative;
+}
+
+.list-item .date {
+	margin-bottom: 13px;
+}
+
+.date:after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 2px;
+	left: 0;
+	background: url('../img/sprite.png') no-repeat -335px -17px;
+	width: 12px;
+	height: 12px;
 }
 
 .read-popup {
