@@ -312,7 +312,8 @@ header .phone {
 
 .select-wrapper {
 	position: relative;
-	display: inline-block; 
+	display: block;
+    float: left;
 }
 
 button {
@@ -327,7 +328,8 @@ button {
 }
 
 .drop-list {
-	padding: 19px 100px 19px 40px;
+	padding: 0 100px 0 40px;
+	height: 60px;
 	font-size: 0.813rem;
 	text-transform: uppercase;
 	letter-spacing: 1px;
@@ -1002,8 +1004,81 @@ button {
 	color: #919191;
 }
 
+.advanced-filter #filter-form {
+	width: 865px;
+}
+
 .offers-wrapper {
 	margin-top: 150px;
+}
+
+.filter-text {
+	color: #7d7d7d;
+	width: 335px;
+	float: left;
+	padding-right: 40px;
+    box-sizing: border-box;
+}
+
+.filter-text h4 {
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.input-wrapper {
+	position: relative;
+    display: block;
+    float: left;
+}
+
+.advanced-filter .row1, .advanced-filter .row2 {
+	overflow: hidden;
+}
+
+.advanced-filter .row2 {
+	margin-top: 40px;
+}
+
+.advanced-filter .select-wrapper .drop-list {
+	width: 100%;
+}
+
+.input-wrapper input {
+	border: 1px solid #3c3c3c;
+    padding: 0 20px;
+    height: 60px;
+    width: 100%;
+    color: #fff;
+    outline: none;
+    box-sizing: border-box;
+    background: #262626;
+}
+
+.input-wrapper input:focus {
+	border-color: #919191;
+}
+
+.advanced-filter .input-wrapper, .advanced-filter .select-wrapper {
+	width: 32%;
+}
+
+.advanced-filter .row1 .select-wrapper {
+	margin-left: 2%;
+}
+
+.advanced-filter .row2 .select-wrapper {
+	margin-left: 0;
+	margin-right: 2%;
+}
+
+.advanced-filter .row2 .readmore {
+	margin-left: 0;
+	width: 32%;
+	border-color: #3c3c3c;
+}
+
+.advanced-filter .row2 .readmore:after {
+	border-color: #3c3c3c;
 }
 
 .pagination {
