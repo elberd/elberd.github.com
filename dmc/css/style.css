@@ -1002,6 +1002,49 @@ button {
 	color: #919191;
 }
 
+.offers-wrapper {
+	margin-top: 150px;
+}
+
+.pagination {
+	overflow: hidden;
+	margin-top: 100px;
+	width: 100%;
+	text-align: center;
+}
+
+.pagination ul {
+	list-style: none;
+	margin: 0;
+	padding:0;
+}
+
+.pagination ul li {
+	display: inline-block;
+	margin-right: 5px;
+}
+
+.pagination ul li:last-child {
+	margin-right: 0;
+}
+
+.pagination ul li a {
+	padding: 13px 20px;
+	border: 1px solid #c2c2c2;
+	display: block;
+	text-decoration: none;
+	color: #262626;
+	text-transform: uppercase;
+}
+
+.pagination .nav, .pagination .active {
+	border-color: #262626;
+}
+
+.pagination .active {
+	font-weight: bold;
+}
+
 .footer-menu1 {
 	background: #f3f3f3;
 	overflow: hidden;
