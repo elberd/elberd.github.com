@@ -641,6 +641,82 @@ button {
 	float: right;
 }
 
+.project-location {
+	margin: 10px 0 50px 0;
+	overflow: hidden;
+}
+
+.project-location .city {
+	text-transform: uppercase;
+	position: relative;
+	padding-left: 17px;
+	display: block;
+	float: left;
+	line-height: 50px;
+}
+
+.project-location .city:before {
+	content: '';
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 16px;
+	background: url('../img/sprite.png') no-repeat -367px -15px;
+	width: 9px;
+	height: 15px;
+}
+
+.project-location .show-map {
+	padding: 0 35px;
+	height: 50px;
+	line-height: 50px;
+	margin-left: 30px;
+    box-sizing: border-box;
+    display: block;
+    float: left;
+    text-decoration: none;
+}
+
+.tab-info .tab-nav {
+	list-style: none;
+	margin: 100px 0 30px 0;
+	padding: 0;
+	border-bottom: 2px solid #262626;
+}
+
+.tab-info .tab-nav li {
+	display: inline-block;
+}
+
+.tab-info .tab-nav li {
+	text-transform: uppercase;
+	padding: 10px 20px;
+	cursor: pointer;
+	border-top: 2px solid #fff;
+	border-left: 2px solid #fff;
+	border-right: 2px solid #fff;
+	user-select: none;
+	-webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+}
+
+.tab-info .tab-nav .active {
+	border-top: 2px solid #262626;
+	border-left: 2px solid #262626;
+	border-right: 2px solid #262626;
+}
+
+.tab-info .tab-inner {
+	display: none;
+}
+
+.tab-info .tab-inner.active {
+	display: block;
+}
+
 .right-col {
 	padding-top: 135px;
 	width: 305px;
@@ -783,7 +859,7 @@ button {
 	height: 100px;
 }
 
-.subscribe-form input[type='submit']{
+.subscribe-form input[type='submit'], .show-map{
 	background: #262626;
 	border: 0;
 	color: #fff;
