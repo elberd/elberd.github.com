@@ -765,7 +765,7 @@ button {
 	margin-top: 50px;
 }
 
-.subscribe-form input {
+.subscribe-form input, .subscribe-form textarea {
 	width: 100%;
 	border: 1px solid #bebebe;
 	padding: 17px 20px;
@@ -774,8 +774,13 @@ button {
 	outline: none;
 }
 
-.subscribe-form input:focus {
+.subscribe-form input:focus, .subscribe-form textarea:focus {
 	border: 1px solid #353535;
+}
+
+.subscribe-form textarea {
+	max-width: 100%;
+	height: 100px;
 }
 
 .subscribe-form input[type='submit']{
@@ -785,6 +790,11 @@ button {
 	text-transform: uppercase;
 	font-size: 0.813rem;
     letter-spacing: 2px;
+}
+
+.right-col .subscribe-form {
+	width: 100%;
+	margin-top: 10px;
 }
 
 .management {
