@@ -111,11 +111,11 @@ header .phone {
 	padding-top: 10px;
 }
 
-.menu.menu-fixed ul {
+.menu.menu-fixed .wrapper>ul {
 	margin-left: 180px;
 }
 
-.menu.menu-fixed ul:before {
+.menu.menu-fixed .wrapper>ul:before {
 	content: '';
 	display: block;
 	position: absolute;
@@ -128,7 +128,7 @@ header .phone {
     background-repeat: no-repeat;
 }
 
-.menu.menu-fixed ul li {
+.menu.menu-fixed .wrapper>ul>li {
 	margin-left: 25px;
 }
 
@@ -161,18 +161,18 @@ header .phone {
 	height: 20px;
 }
 
-.menu ul {
+.menu .wrapper>ul {
 	margin: 0;
 	padding: 10px 0 0 0;
 	text-align: justify;
 	display: inline-block;
 }
 
-.menu ul li:first-child {
+.menu .wrapper>ul>li:first-child {
 	margin-left: 0;
 }
 
-.menu ul li{
+.menu .wrapper>ul>li{
 	display: inline-block;
 	color: #fff; 
 	margin-left: 40px;
@@ -182,12 +182,12 @@ header .phone {
 
 }
 
-.menu ul li:hover, .menu ul li.active {
+.menu .wrapper>ul>li:hover, .menu ul li.active {
 	border-bottom: 4px solid #fff;
 	height: 35px;
 }
 
-.menu ul li a {
+.menu .wrapper>ul>li a {
 	height: 39px;
 	display: block;
 	color: #fff;
@@ -200,6 +200,71 @@ header .phone {
     top: 104px;
     z-index: 999;
     width: 100%;
+}
+
+.menu .wrapper>ul>li .submenu {
+	display: none;
+	position: absolute;
+	left: 0;
+	border-top: 2px solid #fff;
+	background: #262626;
+	padding: 40px;
+}
+
+.submenu ul {
+	margin: 0;
+	padding: 0;
+	width: 250px;
+	float: left;
+}
+
+.submenu ul li {
+	list-style: none;
+}
+
+.menu .wrapper .submenu ul li a {
+	height: 20px;
+	margin-bottom: 10px;
+	display: inline-block;
+	border-bottom: 2px solid #262626;
+}
+
+.menu .wrapper .submenu ul li:hover a {
+	border-bottom: 2px solid #fff;
+}
+
+.submenu .menu-desc {
+	padding-left: 250px;
+	padding-right: 300px;
+	overflow: hidden;
+	border-left: 2px solid #fff;
+	padding-left: 50px;
+}
+
+.submenu .menu-desc .look {
+	float: left;
+}
+
+.submenu .menu-desc h4 {
+	margin-top: 0;
+}
+
+.submenu .menu-desc p {
+	text-transform: none;
+	font-weight: normal;
+}
+
+.submenu .menu-desc img {
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	height: 100%;
+	max-width: 300px;
+}
+
+.menu .wrapper>ul>li:hover .submenu{
+	display: block;
 }
 
 .content {
